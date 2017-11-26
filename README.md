@@ -10,9 +10,13 @@
 
 ## About
 
-Demonstrate a [Redux-Observable](https://redux-observable.js.org/) [Epic](https://redux-observable.js.org/docs/basics/Epics.html) that emits message-received actions from a real-time [getstream.io](getstream.io) client feed subscription. The message-received action stream is started by sending the Epic a start action and stopped by sending it a stop action.
+Demonstrate a [Redux-Observable](https://redux-observable.js.org/) [Epic](https://redux-observable.js.org/docs/basics/Epics.html) that emits message-received actions from a real-time [getstream.io](https://getstream.io) client feed subscription. The message-received action stream is started by sending the Epic a start action and stopped by sending it a stop action.
 
 Source code for the Epic, [streamMessages](https://github.com/joeldalley/redux-observable-getstream-io/blob/master/src/app/epic.ts#L83).
+
+#### Video Demo
+
+[![Youtube Video](https://i.imgur.com/eE5t83P.png)](https://www.youtube.com/watch?v=o_gMcbv3baU)
 
 #### How Epics Work
 
@@ -53,7 +57,7 @@ This architecture imparts many benefits, and luckily it's easy to use [RxJS](htt
                               (  Events  )             Rx Subjects.
                               (__________)
 ```
-Source code for the Singleton, [FeedStream](https://github.com/joeldalley/redux-observable-getstream-io/blob/master/src/lib/FeedStream.ts).
+[FeedStream source code](https://github.com/joeldalley/redux-observable-getstream-io/blob/master/src/lib/FeedStream.ts).
 
 ## Clone and Install
 
@@ -63,7 +67,7 @@ cd redux-observable-getstream-io && npm install
 ```
 ## Add GetStream Details
 
-After creating a free [getstream.io](getstream.io) account, you will be able to create three files required for this app to work. In the GetStream dashboard, locate your app ID, API key and API key secret. Then, in the project root:
+After creating a free [getstream.io](https://getstream.io) account, you will be able to create three files required for this app to work. In the GetStream dashboard, locate your app ID, API key and API key secret. Then, in the project root:
 
 ```sh
 echo YOUR_APP_ID > .app-id
