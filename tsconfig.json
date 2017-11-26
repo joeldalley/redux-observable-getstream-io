@@ -1,0 +1,26 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+      "jsx": "React",
+      "lib": ["es2016", "DOM"],
+      "module": "commonjs",
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "outDir": "artifacts",
+      "sourceMap": true,
+      "strict": true,
+      "target": "es5"
+    },
+    "include": [
+      "src/api/*.ts",
+      "src/app/*.ts",
+      "src/app/*.tsx",
+      "src/lib/getOrElse.ts"
+    ],
+    "exclude": [
+      "artifacts",
+      "dist",
+      "node_modules"
+    ]
+}

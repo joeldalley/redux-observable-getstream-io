@@ -1,0 +1,8 @@
+.app-id
+.api-key
+.api-key-secret
+node_modules
+npm-debug.log
+package-lock.json
+artifacts
+dist
